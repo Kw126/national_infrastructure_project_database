@@ -1,0 +1,2 @@
+CREATE DATABASE national_infrastructure_project_database;
+USE national_infrastructure_project_database;
