@@ -21,7 +21,6 @@ Out of scope:
 -Security, authentication, or live data
 -Advanced analytics or mapping
 
-
 ## Project Requirements
 The system must:
 -Store; project, location, contractor, budget, and milestone data.
@@ -39,10 +38,48 @@ Non-Functional Requirements:
 
 
 ## Project Assumptions
-
 -All data is fictional and created for testing.
 -No backend or real system integration is required.
 -Team members share the workload.
 -Webpage uses static JSON only.
 -Budgets, dates, and contractor details are simplified.
 -Province/city values are manually entered without validation.
+
+
+# Step-by-Step Instructions
+
+## Prerequisites
+Database Software
+    -MySQL or MariaDB installed on your machine.
+Database Client Tools
+    -MySQL Workbench, MySQL Shell, or another SQL client to run queries and manage the database.
+Web Browser
+    -Chrome, Firefox, Edge, or another modern browser to view the proof-of-concept webpage.
+Basic Knowledge
+    -Understanding of SQL queries and relational databases.
+    -Familiarity with JSON and XML formats.
+    -Basic HTML and CSS to view the webpage.
+
+## Database Creation
+-Run the database schema to create all required tables.
+-Load sample data including projects, provinces, contractors, and assignments.
+-Ensure parent tables (like provinces and contractors) are loaded before child tables.
+-Create a JSON file with at least 5 Planned projects.
+-Create an XML file with at least 5 In-Progress projects.
+-Make sure both files are valid and reflect the database content.
+
+## Run the script
+-Open your database client (e.g., MySQL Workbench).
+-Open the database script file that contains the schema and sample data.
+-Execute the script to create all tables and insert the sample data. 
+    In most clients, you can run the entire script at once (for example, by clicking the “Execute” or “Run” button).
+-Verify that all tables have been created and that the sample data is loaded correctly by browsing the tables or running simple queries.
+
+## Verification 
+-Open your database client and connect to the database.
+-Browse the Projects table (or equivalent table) to check that the sample data is loaded.
+-Verify the number of sample projects: there should be at least 8–10 projects across multiple provinces.
+-Check that related tables (like Contractors and Provinces) also contain the sample data.
+-Optionally, run a simple query to view all projects and confirm their names, status, and budgets.
+
+
