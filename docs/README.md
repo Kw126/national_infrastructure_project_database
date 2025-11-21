@@ -23,7 +23,7 @@ Out of scope:
 
 ## Project Requirements
 The system must:
--Store; project, location, contractor, budget, and milestone data.
+-Store; project, Province, contractor, and project assignment data.
 -Track project status and progress.
 -Support users assigned to projects.
 -Provide sample JSON and XML datasets.
@@ -42,9 +42,10 @@ Non-Functional Requirements:
 -No backend or real system integration is required.
 -Team members share the workload.
 -Webpage uses static JSON only.
--Budgets, dates, and contractor details are simplified.
--Province/city values are manually entered without validation.
-
+- The relationship between entities; 
+  - contractors M:M project assignment 
+  - project assignment M:1 Province
+  - project assignment 1:1 project
 
 # Step-by-Step Instructions
 
@@ -62,7 +63,7 @@ Basic Knowledge
 
 ## Database Creation
 -Run the database schema to create all required tables.
--Load sample data including projects, provinces, contractors, and assignments.
+-Load sample data including projects, provinces, contractors, and budget.
 -Ensure parent tables (like provinces and contractors) are loaded before child tables.
 -Create a JSON file with at least 5 Planned projects.
 -Create an XML file with at least 5 In-Progress projects.
