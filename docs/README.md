@@ -43,7 +43,7 @@ Non-Functional Requirements:
 -Team members share the workload.
 -Webpage uses static JSON only.
 - The relationship between entities; 
-  - contractors M:M project assignment 
+  - project assignment M:1 contractors
   - project assignment M:1 Province
   - project assignment 1:1 project
 
