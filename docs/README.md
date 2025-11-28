@@ -1,5 +1,4 @@
-# project title
-National infrastructure project
+# National Infrastructure Project
 
 ## Project Scope
 The project involves creating a proof-of-concept 
