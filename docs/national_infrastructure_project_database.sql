@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Contractors (
 CREATE TABLE IF NOT EXISTS Projects (
 	ProjectID INT AUTO_INCREMENT PRIMARY KEY,
     ProjectName VARCHAR(255) NOT NULL,
-    Budget DECIMAL (12 , 2) NOT NULL,
+    Budget DECIMAL (18 , 2) NOT NULL,
     Status ENUM ('Planned', 'In progress', 'Completed')
 );
 
@@ -37,7 +37,7 @@ INSERT INTO Contractors (CompanyName, HQCity) VALUES
 ('PCL Construction', 'Edmonton AB'),
 ('EllisDon Corporation', 'Mississauga ON'),
 ('Bird Construction Inc.', 'Mississauga ON'),
-('Broccolini Construction Inc,' 'Kirkland QC'),
+('Broccolini Construction Inc', 'Kirkland QC'),
 ('Maple Reinders', 'Mississauga ON'),
 ('Strike Group', 'Calgary AB'),
 ('Buttcon ltd.', 'Woodbridge ON'),
@@ -73,3 +73,4 @@ INSERT INTO Projects (ProjectName, Budget, Status) VALUES
 ('Newfoundland Ferry Expansion', 45000000, 'Completed'),
 ('James Bay Project', 13700000000, 'In Progress'),
 ('Winnipeg City Hall Upgrade', 235000000, 'Planned');
+
