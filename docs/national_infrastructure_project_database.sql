@@ -63,4 +63,13 @@ INSERT INTO Provinces (ProvinceName) VALUES
 of keeping things organised we're calling them provinces */
 
 INSERT INTO Projects (ProjectName, Budget, Status) VALUES
-('POPULATE TABLE WITH DATA', 1.00, 'Planned');
+('401 Rail Tunnel', 116900000, 'Completed'),
+('Kingston General Hospital Renovation', 142100000, 'Completed'),
+('Highway 17 Road Repair', 56000000, 'Planned'),
+('Highway 16 Avalanche Prevention', 543850000, 'In Progress'),
+('Parliament Hill Refurbishment', 253539000, 'In Progress'),
+('Manitoulin Island Bridge Rebuild', 953826000, 'Planned'),
+('Saskatoon International Airport Expansion', 1636860000, 'In Progress'),
+('Newfoundland Ferry Expansion', 45000000, 'Completed'),
+('James Bay Project', 13700000000, 'In Progress'),
+('Winnipeg City Hall Upgrade', 235000000, 'Planned');
