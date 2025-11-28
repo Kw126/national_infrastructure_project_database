@@ -21,11 +21,15 @@ CREATE TABLE IF NOT EXISTS Provinces (
     ProvinceName VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS ProjectAssignments (
-	AssignmentID INT AUTO_INCREMENT PRIMARY KEY,
-    FOREIGN KEY (ProjectID) REFERENCES Projects(tProjectID),
-    FOREIGN KEY (ContractorID) REFERENCES Contractors(ContractorID),
-    FOREIGN KEY (ProvinceID) REFERENCES Provinces(ProvinceID)
+CREATE TABLE IF NOT EXISTS ProjectAssignments
+(
+    AssignmentID INT AUTO_INCREMENT PRIMARY KEY,
+    ProjectID int not null,
+    ContractorID int not null,
+    ProvinceID   int not null,
+    FOREIGN KEY (ProjectID) REFERENCES Projects (ProjectID),
+    FOREIGN KEY (ContractorID) REFERENCES Contractors (ContractorID),
+    FOREIGN KEY (ProvinceID) REFERENCES Provinces (ProvinceID)
 );
 
 -- Insert data into tables
@@ -58,5 +62,5 @@ INSERT INTO Provinces (ProvinceName) VALUES
 /* Last 3 entries are actually territories but for the sake
 of keeping things organised we're calling them provinces */
 
-INSERT INTO Projects (Name, Budget, Status) VALUES
+INSERT INTO Projects (ProjectName, Budget, Status) VALUES
 ('POPULATE TABLE WITH DATA', 1.00, 'Planned');
