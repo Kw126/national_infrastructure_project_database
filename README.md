@@ -1,2 +1,2 @@
 # national_infrastructure_project_database
-[HTML Preview](http://htmlpreview.github.io/?https://github.com/Kw126/national_infrastructure_project_database/blob/main/docs/Home.HTML)
+originally the html code was built to be accessed through this link [HTML Preview](http://htmlpreview.github.io/?https://github.com/Kw126/national_infrastructure_project_database/blob/main/docs/Home.HTML) however it got blocked by SLC IT for "containing malicious content" despite being safe, so the "docs" folder now needs to be downloaded and one of the HTML files needs to be opened in a browser in order to access the website
