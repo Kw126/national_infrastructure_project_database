@@ -2,8 +2,8 @@
     ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
-        background-color: #333333;
+        padding: 4px;
+        background-color: #b174e7;
         display: flex;
 
     }
@@ -26,6 +26,28 @@
     }
 
     ul li a:hover {
-        background-color: #111111;
+        background-color: #a86cde;
     }
+
+    .homeUl{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #b174e7;
+        display: flex;
+
+        li {
+            flex-grow: 0;
+
+            &:first-child {
+                flex-grow: 0;
+            }
+
+        }
+
+    }
+}
+
+body{
+    background-color: #D3BDB0;
 }
