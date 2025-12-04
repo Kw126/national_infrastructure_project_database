@@ -108,4 +108,9 @@ UPDATE Projects
 SET Status = 'Completed'
 WHERE ProjectName = 'Parliament Hill Refurbishment';
 
--- Query 5 (FINISH)
+-- Query 5
+SELECT ProjectAssignments.ProvinceID, Provinces.ProvinceName, SUM(Projects.Budget) AS TotalBudget
+FROM ((ProjectAssignments
+INNER JOIN Projects ON ProjectAssignments.ProjectID = Projects.ProjectID)
+INNER JOIN Provinces ON ProjectAssignments.ProvinceID = Provinces.ProvinceID)
+GROUP BY ProjectAssignments.ProvinceID, Provinces.ProvinceName;
