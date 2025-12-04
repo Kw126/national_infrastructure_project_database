@@ -113,4 +113,5 @@ SELECT ProjectAssignments.ProvinceID, Provinces.ProvinceName, SUM(Projects.Budge
 FROM ((ProjectAssignments
 INNER JOIN Projects ON ProjectAssignments.ProjectID = Projects.ProjectID)
 INNER JOIN Provinces ON ProjectAssignments.ProvinceID = Provinces.ProvinceID)
-GROUP BY ProjectAssignments.ProvinceID, Provinces.ProvinceName;
+GROUP BY ProjectAssignments.ProvinceID, Provinces.ProvinceName
+ORDER BY SUM(Projects.Budget) DESC;
