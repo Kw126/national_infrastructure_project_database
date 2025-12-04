@@ -63,14 +63,55 @@ INSERT INTO Provinces (ProvinceName) VALUES
 of keeping things organised we're calling them provinces */
 
 INSERT INTO Projects (ProjectName, Budget, Status) VALUES
-('401 Rail Tunnel', 116900000, 'Completed'),
+('401 Rail Tunnel', 116900000, 'In Progress'),
 ('Kingston General Hospital Renovation', 142100000, 'Completed'),
 ('Highway 17 Road Repair', 56000000, 'Planned'),
-('Highway 16 Avalanche Prevention', 543850000, 'In Progress'),
+('Highway 16 Avalanche Prevention', 543850000, 'Planned'),
 ('Parliament Hill Refurbishment', 253539000, 'In Progress'),
 ('Manitoulin Island Bridge Rebuild', 953826000, 'Planned'),
 ('Saskatoon International Airport Expansion', 1636860000, 'In Progress'),
 ('Newfoundland Ferry Expansion', 45000000, 'Completed'),
 ('James Bay Project', 13700000000, 'In Progress'),
-('Winnipeg City Hall Upgrade', 235000000, 'Planned');
+('Winnipeg City Hall Upgrade', 235000000, 'Planned'),
+('Pickering Nuclear Power Plant Expansion', 374730000, 'Planned'),
+('Calgary Water Main Replacement', 346754730, 'In Progress'),
+('Shearwater Air Base Runway Expansion', 56946000, 'In Progress');
 
+
+INSERT INTO ProjectAssignments (ProjectID, ContractorID, ProvinceID) VALUES
+(1, 2, 1),
+(2, 7, 1),
+(3, 3, 1),
+(4, 8, 6),
+(5, 2, 1),
+(6, 3, 1),
+(7, 1, 5),
+(8, 4, 9),
+(9, 4, 3),
+(10, 2, 4),
+(11, 7, 1),
+(12, 6, 2),
+(13, 4, 8);
+
+-- Query 1
+SELECT * FROM ProjectAssignments WHERE ProvinceID = 1;
+
+-- Query 2
+SELECT * FROM Projects WHERE Status = "In Progress";
+
+-- Query 3
+SELECT ContractorID, COUNT(*) AS ProjectNumber FROM ProjectAssignments
+GROUP BY ContractorID;
+
+-- Query 4
+UPDATE Projects
+SET Status = 'Completed'
+WHERE ProjectName = 'Parliament Hill Refurbishment';
+
+-- Query 5
+SELECT ProjectAssignments.ProvinceID, Provinces.ProvinceName, SUM(Projects.Budget) AS TotalBudget
+FROM ((ProjectAssignments
+INNER JOIN Projects ON ProjectAssignments.ProjectID = Projects.ProjectID)
+INNER JOIN Provinces ON ProjectAssignments.ProvinceID = Provinces.ProvinceID)
+GROUP BY ProjectAssignments.ProvinceID, Provinces.ProvinceName
+ORDER BY SUM(Projects.Budget) DESC;
