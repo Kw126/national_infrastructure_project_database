@@ -115,3 +115,12 @@ INNER JOIN Projects ON ProjectAssignments.ProjectID = Projects.ProjectID)
 INNER JOIN Provinces ON ProjectAssignments.ProvinceID = Provinces.ProvinceID)
 GROUP BY ProjectAssignments.ProvinceID, Provinces.ProvinceName
 ORDER BY SUM(Projects.Budget) DESC;
+
+
+-- Query for XML data export
+select Projects.ProjectName, Projects.Budget, Projects.Status, Provinces.ProvinceName, Contractors.CompanyName
+from ProjectAssignments
+inner join Projects on ProjectAssignments.ProjectID = Projects.ProjectID
+inner join Provinces on ProjectAssignments.ProvinceID = Provinces.ProvinceID
+inner join Contractors on ProjectAssignments.ContractorID = Contractors.ContractorID
+where Projects.Status = "In Progress";
