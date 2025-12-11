@@ -1,16 +1,31 @@
+
 <!DOCTYPE html>
-
-<html lang="">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>JSON</title>
-    </head>
-
-    <header>
-        <script src="header.js"></script>
-    </header>
-
-    <body>
-    <h1>Planned Projects</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JSON • Planned Projects</title>
+    <script src="getJSON.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <script src="header.js"></script>
+</header>
+<body>
+<h1>JSON</h1>
+<h2>Planned Projects</h2>
+<div class=tableChunk>
+<table>
+    <thead>
+    <tr>
+        <th>ProjectName</th>
+        <th>Budget</th>
+        <th>Status</th>
+        <th>CompanyName</th>
+        <th>ProvinceName</th>
+    </tr>
+    </thead>
+    <tbody id="data-table"></tbody>
+</table>
+</div>
+</body>
 </html>

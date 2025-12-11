@@ -1,5 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <projects>
     <project>
-
+        <ProjectName>401 Rail Tunnel</ProjectName>
+        <Budget>116900000.00</Budget>
+        <Status>In Progress</Status>
+        <ProvinceName>Ontario</ProvinceName>
+        <CompanyName>EllisDon Corporation</CompanyName>
+    </project>
+    <project>
+        <ProjectName>Parliament Hill Refurbishment</ProjectName>
+        <Budget>253539000.00</Budget>
+        <Status>In Progress</Status>
+        <ProvinceName>Ontario</ProvinceName>
+        <CompanyName>EllisDon Corporation</CompanyName>
+    </project>
+    <project>
+        <ProjectName>Saskatoon International Airport Expansion</ProjectName>
+        <Budget>1636860000.00</Budget>
+        <Status>In Progress</Status>
+        <ProvinceName>Saskatchewan</ProvinceName>
+        <CompanyName>PCL Construction</CompanyName>
+    </project>
+    <project>
+        <ProjectName>James Bay Project</ProjectName>
+        <Budget>13700000000.00</Budget>
+        <Status>In Progress</Status>
+        <ProvinceName>Quebec</ProvinceName>
+        <CompanyName>Broccolini Construction Inc</CompanyName>
+    </project>
+    <project>
+        <ProjectName>Calgary Water Main Replacement</ProjectName>
+        <Budget>346754730.00</Budget>
+        <Status>In Progress</Status>
+        <ProvinceName>Alberta</ProvinceName>
+        <CompanyName>Strike Group</CompanyName>
+    </project>
+    <project>
+        <ProjectName>Shearwater Air Base Runway Expansion</ProjectName>
+        <Budget>56946000.00</Budget>
+        <Status>In Progress</Status>
+        <ProvinceName>Nova Scotia</ProvinceName>
+        <CompanyName>Broccolini Construction Inc</CompanyName>
     </project>
 </projects>

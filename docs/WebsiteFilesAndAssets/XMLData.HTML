@@ -1,16 +1,32 @@
+
 <!DOCTYPE html>
-
-<html lang="">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>XML</title>
-    </head>
-
-    <header>
-        <script src="header.js"></script>
-    </header>
-
-    <body>
-    <h1>Projects In Progress</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>XML • Projects In Progress</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="getXML.js" defer></script>
+</head>
+<header>
+    <script src="header.js"></script>
+</header>
+<body>
+<h1>XML</h1>
+<h2>Projects In Progress</h2>
+<div class=tableChunk>
+<table>
+    <thead>
+    <tr>
+        <th>ProjectName</th>
+        <th>Budget</th>
+        <th>Status</th>
+        <th>CompanyName</th>
+        <th>ProvinceName</th>
+    </tr>
+    </thead>
+    <tbody id="data-table"></tbody>
+</table>
+</div>
+<div id="userData"></div>
+</body>
 </html>

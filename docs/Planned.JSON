@@ -1,0 +1,40 @@
+
+{
+  "projects": [
+    {
+      "ProjectName": "Highway 17 Road Repair",
+      "Budget": 56000000,
+      "Status": "Planned",
+      "ProvinceName": "Ontario",
+      "CompanyName": "Bird Construction Inc."
+    },
+    {
+      "ProjectName": "Highway 16 Avalanche Prevention",
+      "Budget": 543850000,
+      "Status": "Planned",
+      "ProvinceName": "British Columbia",
+      "CompanyName": "On Side Restoration Services Ltd."
+    },
+    {
+      "ProjectName": "Manitoulin Island Bridge Rebuild",
+      "Budget": 953826000,
+      "Status": "Planned",
+      "ProvinceName": "Ontario",
+      "CompanyName": "Bird Construction Inc."
+    },
+    {
+      "ProjectName": "Winnipeg City Hall Upgrade",
+      "Budget": 235000000,
+      "Status": "Planned",
+      "ProvinceName": "Manitoba",
+      "CompanyName": "EllisDon Corporation"
+    },
+    {
+      "ProjectName": "Pickering Nuclear Power Plant Expansion",
+      "Budget": 374730000,
+      "Status": "Planned",
+      "ProvinceName": "Ontario",
+      "CompanyName": "Buttcon ltd."
+    }
+  ]
+}
